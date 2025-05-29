@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерная Академия TOP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #000000 0%, #7f1d1d 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .teacher-card:hover .teacher-overlay {
+            opacity: 1;
+        }
+        .pulse-phone {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-laptop-code text-3xl text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">Академия TOP</h1>
+                        <p class="text-red-300">Лидер IT-образования</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                    <a href="tel:+79227095983" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-bold flex items-center pulse-phone">
+                        <i class="fas fa-phone-alt mr-2"></i> +7 922 709 59 83
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-black text-white py-20">
+        <div class="absolute inset-0 bg-opacity-50 bg-black"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Стань профессионалом <span class="text-red-600">IT-индустрии</span></h2>
+                    <p class="text-xl mb-8 text-gray-300">Обучение на современном оборудовании у практикующих специалистов</p>
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                        <a href="#courses" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold text-center hover-scale">Наши курсы</a>
+                        <a href="#contacts" class="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-bold text-center hover-scale">Записаться</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Компьютерный класс" class="rounded-lg shadow-2xl hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Почему выбирают <span class="text-red-600">Академию TOP</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-desktop text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Современные компьютеры</h3>
+                    <p class="text-gray-600 text-center">Оборудованные аудитории с мощными ПК и профессиональным ПО</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chalkboard-teacher text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Практикующие преподаватели</h3>
+                    <p class="text-gray-600 text-center">Опытные специалисты из IT-индустрии с педагогическим опытом</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-briefcase text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Трудоустройство</h3>
+                    <p class="text-gray-600 text-center">Помощь в составлении резюме и трудоустройстве после обучения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Наши <span class="text-red-600">курсы</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 text-white rounded-lg overflow-hidden shadow-xl hover-scale">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-code text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Веб-разработка</h3>
+                        <p class="text-gray-300 mb-4">Полный курс по созданию современных веб-приложений</p>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> HTML/CSS/JavaScript</li>
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> React/Vue.js</li>
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> Node.js/Express</li>
+                        </ul>
+                        <div class="text-red-400 font-bold text-lg">От 24 000 ₽/мес</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 text-white rounded-lg overflow-hidden shadow-xl hover-scale">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Мобильная разработка</h3>
+                        <p class="text-gray-300 mb-4">Создание приложений для iOS и Android</p>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> Swift/Kotlin</li>
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> Flutter/React Native</li>
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> Архитектура приложений</li>
+                        </ul>
+                        <div class="text-red-400 font-bold text-lg">От 28 000 ₽/мес</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 text-white rounded-lg overflow-hidden shadow-xl hover-scale">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-brain text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Data Science</h3>
+                        <p class="text-gray-300 mb-4">Анализ данных и машинное обучение</p>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> Python для анализа данных</li>
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> Машинное обучение</li>
+                            <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i> Визуализация данных</li>
+                        </ul>
+                        <div class="text-red-400 font-bold text-lg">От 32 000 ₽/мес</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contacts" class="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-bold inline-block hover-scale">Узнать больше о курсах</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Наши <span class="text-red-600">преподаватели</span></h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg relative teacher-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=6930b88a78594177ba51660680483b9be3711b20-5344236-images-thumbs&n=13" alt="Преподаватель" class="w-full h-64 object-cover">
+                    <div class="teacher-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Алексей Петров</h3>
+                            <p class="text-red-300 mb-2">Team Lead в Яндекс</p>
+                            <p class="text-sm">10 лет опыта в веб-разработке</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Алексей Петров</h3>
+                        <p class="text-red-600">Веб-разработка</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg relative teacher-card">
+                    <img src="https://avatars.mds.yandex.net/get-shedevrum/12370990/cropped_original_a96212fae6ed11ee919a9608c8b90e56/orig" alt="Преподаватель" class="w-full h-64 object-cover">
+                    <div class="teacher-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Екатерина Смирнова</h3>
+                            <p class="text-red-300 mb-2">Senior iOS Developer</p>
+                            <p class="text-sm">8 лет в мобильной разработке</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Екатерина Смирнова</h3>
+                        <p class="text-red-600">Мобильная разработка</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg relative teacher-card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Преподаватель" class="w-full h-64 object-cover">
+                    <div class="teacher-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Малик Муссаевич</h3>
+                            <p class="text-red-300 mb-2">Data Scientist</p>
+                            <p class="text-sm">Эксперт в машинном обучении</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Дмитрий Иванов</h3>
+                        <p class="text-red-600">Data Science</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg relative teacher-card">
+                    <img src="https://i.pinimg.com/originals/c2/42/a8/c242a8b1ad09508de023a6d09a0dc75d.jpg" alt="Преподаватель" class="w-full h-64 object-cover">
+                    <div class="teacher-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Анна Кузнецова</h3>
+                            <p class="text-red-300 mb-2">UX/UI Designer</p>
+                            <p class="text-sm">Дизайнер с опытом в крупных проектах</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">Анна Кузнецова</h3>
+                        <p class="text-red-600">Дизайн интерфейсов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classrooms -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Наши <span class="text-red-600">аудитории</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Компьютерный класс" class="rounded-lg shadow-xl w-full h-auto hover-scale">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Современные компьютерные классы</h3>
+                    <p class="text-gray-700 mb-4">Наши аудитории оборудованы мощными компьютерами с современными процессорами, профессиональными видеокартами и большими мониторами.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+                            <span>Компьютеры на базе Intel Core i7 / Ryzen 7</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+                            <span>Видеокарты NVIDIA RTX для работы с графикой</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+                            <span>27" мониторы с высоким разрешением</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-red-500 mt-1 mr-2"></i>
+                            <span>Эргономичные кресла и рабочие места</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-900 text-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Техническое оснащение</h3>
+                    <p class="text-gray-300">Мощные рабочие станции для любых задач программирования и дизайна</p>
+                </div>
+                
+                <div class="bg-gray-900 text-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Инфраструктура</h3>
+                    <p class="text-gray-300">Высокоскоростной интернет и локальная сеть для совместной работы</p>
+                </div>
+                
+                <div class="bg-gray-900 text-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Комфорт</h3>
+                    <p class="text-gray-300">Зоны отдыха, кулеры с водой и кофемашины для продуктивной работы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Свяжитесь с <span class="text-red-600">нами</span></h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Ваше имя</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block mb-2 font-medium">Телефон</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        </div>
+                        
+                        <div>
+                            <label for="course" class="block mb-2 font-medium">Интересующий курс</label>
+                            <select id="course" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                                <option value="">Выберите курс</option>
+                                <option value="web">Веб-разработка</option>
+                                <option value="mobile">Мобильная разработка</option>
+                                <option value="data">Data Science</option>
+                                <option value="design">Дизайн интерфейсов</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-2 font-medium">Ваше сообщение</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300">
+                            Отправить заявку
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-900 p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold mb-6">Контактная информация</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-red-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Адрес</h4>
+                                    <p class="text-gray-300">г. Черкесск, ул. Умара Алиева, д. 10А</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-red-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Телефон</h4>
+                                    <p class="text-gray-300">+7 922 709 59 83</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-red-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-300">info@top-academy.ru</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-red-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Режим работы</h4>
+                                    <p class="text-gray-300">Пн-Пт: 9:00 - 21:00</p>
+                                    <p class="text-gray-300">Сб-Вс: 10:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Мы в социальных сетях</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600 transition duration-300">
+                                    <i class="fab fa-vk text-xl"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600 transition duration-300">
+                                    <i class="fab fa-telegram text-xl"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600 transition duration-300">
+                                    <i class="fab fa-youtube text-xl"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600 transition duration-300">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-laptop-code text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold">Академия TOP</h2>
+                            <p class="text-red-300 text-sm">IT-образование нового уровня</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <a href="tel:+79227095983" class="text-xl font-bold mb-2 hover:text-red-300 transition duration-300">+7 922 709 59 83</a>
+                    <p class="text-sm text-gray-300">г. Черкесск, ул. Умара Алиева, д. 10А</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 mb-4 md:mb-0">© 2023 Компьютерная Академия TOP. Все права защищены.</p>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300">Политика конфиденциальности</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Form submission
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
